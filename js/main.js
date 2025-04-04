@@ -47,3 +47,21 @@ function unhighlight() {
 //   console.log("mouseout");
 //   circle1.style.fill = "#80c68b";
 // }
+
+// ¶\hav fat i sliderne
+const slider = document.querySelector("#uhygge-container");
+const dangerValue = document.querySelector("uhygge-container");
+// sæt eventlistener på som opdatere, når jeg laver ændringer
+slider.addEventListener("input", updateValue);
+
+// min span skal opdate sin value
+function updateValue() {
+  console.log("updatevalue");
+}
+radiobuttons;
+document.querySelector("sumAntal").textContent = document.querySelector('input[name="zombie-count"]:checked').value;
+
+const checkboxes = document.querySelector('input'name="behaviour");
+console.log(checkboxes.value);
+const myArray = []
+checkboxes.forEach( lav)
