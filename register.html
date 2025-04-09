@@ -23,20 +23,108 @@
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
       </nav>
-    </header>
+    </header
 
     <main>
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
+          <h2>Kæmpe Snegl formular</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <h2>Har du set en kæmpe snegl?</h2>
+          <div class="form-group">
+            <label for="name">
+              Navn
+              <span class="instruction"> <br />(Skal indeholde mellem 3 og 10 tegn)</span>
+            </label>
+            <input id="name" name="name" type="name" minlength="3" maxlength="10" required />
+            <span class="fejlmeddelelse"></span>
+            <br /><br />
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              >E-mail
+              <span class="instruction"><br />(skal indeholde et @ tegn)</span>
+            </label>
+            <input id="email" name="email" type="email" required />
+            <span class="fejlmeddelelse"></span>
+          </div>
+          <br /><br />
+
+          <div class="form-group">
+            <label for="snegl">Har du set en kæmpesnegl?</label>
+            <input type="radio" id="ja" name="snegl" value="ja" />
+            <label for="ja">Ja</label>
+            <input type="radio" id="nej" name="snegl" value="nej" />
+            <label for="nej">Nej</label><br />
+            <label for="dato">Hvis ja, hvornår?</label>
+            <input type="date" id="dato" name="dato" />
+          </div>
+          <br /><br />
+          <label for="størrelse">Hvad var dens størrelse?</label>
+
+          <input type="radio" id="1-3meter" name="snegl" value="1-3meter" />
+          <label for="1-3meter">1-3 meter</label>
+
+          <input type="radio" id="3-5meter" name="snegl" value="3-5meter" />
+          <label for="3-5meter">3-5 meter</label>
+
+          <input type="radio" id="5-7meter" name="snegl" value="5-7meter" />
+          <label for="5-7meter">5-7 meter</label><br /><br />
+
+          <label for="snegltype">Hvad var det for en type snegl?</label>
+
+          <input type="radio" id="snegl" name="snegl" value="skovsnegl" />
+          <label for="skovsnegl">skovsnegl</label>
+
+          <input type="radio" id="snegl" name="snegl" id="elefantsnegl" />
+          <label for="elefantsnegl">elefantsnegl</label>
+
+          <input type="radio" id="snegl" name="snegl" id="dræbersnegl" />
+          <label for="dræbersnegl">dræbersnegl</label><br /><br />
+
+          <label for="story">Kan du i få orde forklare hvordan den så ud?</label><br />
+          <textarea id="story" name="story" rows="5" cols="33"> </textarea><br /><br /><br /><br />
+
+          <div id="uhygge-container">
+            <label for="uhygge-container">"Hvor uhyggeligt vil du sige oplevelen var?"</label>
+            <input id="uhyggeLevel" value="20" min="0" max="100" type="range" />
+          </div>
+          <br /><br /><br />
+          <label for="snegl"
+            >Er du kommet i kontakt med snegleslim? <br />
+            Hvis ja så uddyb</label
+          >
+
+          <input type="radio" id="nej" name="snegl" value="ja" />
+          <label for="ja">ja</label> <br />
+
+          <input type="radio" id="nej" name="snegl" value="nej" />
+          <label for="nej">nej</label> <br />
+
+          <label for="story">uddyb evt her</label><br />
+          <textarea id="story" name="story" rows="5" cols="33"></textarea>
+          <button type="submit">Send</button><br /><br />
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
+        <article id="sum">
+          <div>
+            <h3>Adresse</h3>
+            <h3>vej</h3>
+            <h3>postnummer</h3>
+            <p></p>
+            <h3>By</h3>
+            <p></p>
+            <h3></h3>
+            <div>
+              <button id="reset_btn" type="reset"></button>
+            </div>
+          </div>
           <p class="placeholder">Opsummering</p>
         </article>
       </section>

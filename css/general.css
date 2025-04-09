@@ -18,9 +18,11 @@ body {
 }
 header,
 footer {
-  background-color: var(--header-background-color);
+  background-color: var(--footer-background-color);
   color: var(--secondary-font-color);
   height: min-content;
+  left: 0;
+  right: 0;
 }
 .logo-wrapper {
   background-color: var(--logotype-background-color);
@@ -28,11 +30,14 @@ footer {
 }
 #main-disclamer {
   height: 180px;
-  background-color: var(--header-background-color);
+  background-color: var(--header-background-color1);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
+}
+.menu {
+  background-color: var(--menu-background-color);
 }
 #main-disclamer-content {
   display: flex;
@@ -137,4 +142,47 @@ footer a {
 }
 .green {
   background-color: var(--info-bg-color-green);
+}
+footer {
+  border-top: 2px solid #ff4b00;
+  width: 100vw;
+}
+input,
+label,
+button {
+  display: block;
+}
+
+input:focus {
+  background-color: white;
+  border-color: black;
+}
+
+input:user-invalid {
+  background-color: #fce2e2;
+  border-color: #ff4b00;
+}
+.instruction {
+  font-size: 0.9em;
+  color: #202020;
+}
+
+.fejlmeddelelse {
+  color: red;
+  font-size: 0.9em;
+  display: none; /* Fejlmeddelelsen er skjult som standard */
+  margin-top: 0.5rem;
+}
+#form-info {
+  background-color: #ffffff;
+}
+#webform {
+  margin-left: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#uhygge-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
