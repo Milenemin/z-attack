@@ -22,7 +22,7 @@ function highlight() {
 function unhighlight() {
   console.log("mouseout");
   document.querySelector("#circle2").style.opacity = 0;
-  circle1.style.fill = "#80c68b";
+  circle2.style.fill = "#80c68b";
 
   document.querySelector("#circle3").addEventListener("mouseover", highlight);
   document.querySelector("#circle3").addEventListener("mouseout", unhighlight);
@@ -35,7 +35,7 @@ function unhighlight() {
   function unhighlight() {
     console.log("mouseout");
     document.querySelector("#circle3").style.opacity = 0;
-    circle1.style.fill = "#80c68b";
+    circle3.style.fill = "#80c68b";
   }
 }
 // function highlight() {
